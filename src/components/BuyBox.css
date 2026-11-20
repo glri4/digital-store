@@ -1,0 +1,66 @@
+.buy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #474747;
+}
+
+.buy-box h1 {
+  color: #1f1f1f;
+  font-size: 28px;
+}
+
+.buy-reference {
+  font-size: 12px;
+  color: #999;
+}
+
+.buy-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buy-rating span {
+  color: #f6aa1c;
+  letter-spacing: 2px;
+}
+
+.buy-rating small {
+  color: #666;
+}
+
+.buy-prices {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.buy-prices strong {
+  color: #c92071;
+  font-size: 24px;
+}
+
+.buy-prices del {
+  color: #999;
+}
+
+.buy-description {
+  line-height: 1.6;
+  color: #666;
+}
+
+.buy-box .buy-button {
+  background: #c92071;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buy-box .buy-button:hover {
+  background: #a8185d;
+  transform: translateY(-2px);
+}

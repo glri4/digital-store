@@ -1,0 +1,147 @@
+.detail-page {
+  background: #f5f5f5;
+  min-height: 500px;
+  padding: 60px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.detail-image {
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-height: 400px;
+}
+
+.detail-image img {
+  width: 90%;
+  height: 350px;
+  object-fit: contain;
+}
+
+.detail-info h1 {
+  color: #1f1f1f;
+  margin-bottom: 10px;
+}
+
+.detail-info h2 {
+  margin: 20px 0;
+}
+
+.detail-info p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.detail-info h3 {
+  margin: 25px 0 15px;
+}
+
+.detail-info button {
+  position: relative;
+  z-index: 10;
+  padding: 12px 18px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.detail-info .buy-button {
+  background: #c92071;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+}
+
+@media (max-width: 700px) {
+  .detail-page {
+    grid-template-columns: 1fr;
+  }
+}
+.size-button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.size-button.selected {
+  border: 2px solid #c92071;
+  color: #c92071;
+  font-weight: bold;
+  background: #fce7f1;
+}
+
+.size-button {
+  transition: all 0.2s ease;
+}
+
+.size-button:hover {
+  border-color: #c92071;
+  color: #c92071;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.product-rating span {
+  color: #f6aa1c;
+  letter-spacing: 2px;
+}
+
+.product-rating small {
+  color: #666;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.product-price h2 {
+  margin: 0;
+  color: #c92071;
+}
+
+.product-price del {
+  color: #999;
+}
+
+.buy-button {
+  transition: all 0.2s ease;
+}
+
+.buy-button:hover {
+  background: #a8185d;
+  transform: translateY(-2px);
+}
+
+.cart-message {
+  color: #168a45;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+  background: #e8f7ed;
+  border-radius: 5px;
+}
+
+.detail-page > .section {
+  grid-column: 1 / -1;
+  width: 100%;
+}
